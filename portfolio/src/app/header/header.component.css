@@ -1,3 +1,11 @@
+.hamburger-menu {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+
 .navbar-title {
   font-size: 16px;
   text-decoration: none;
@@ -10,9 +18,38 @@
   transform: scale(1.1);
 }
 
-
-
 .logo {
   font-size: 16px;
   font-weight: 600;
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  /* .hamburger-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black; 
+  } */
+
+  .hamburger-button {
+    width: 30px;
+    height: 30px;
+    color: red;
+  }
+  
 }

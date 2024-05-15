@@ -1,17 +1,18 @@
-<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-  <div class="container-fluid d-flex justify-content-end px-5 pt-3 gap-5">
-    <a routerLink="/about-me" class="navbar-title">ABOUT ME</a>
-    <a routerLink="/skills" class="navbar-title">SKILLS</a>
-    <a routerLink="/projects" class="navbar-title">PROJECTS</a>
-    <a routerLink="/contacts" class="navbar-title">CONTACTS</a>
-  </div>
-</nav> -->
-<header class="header d-flex justify-content-between align-items-center pt-3 px-5">
+<header class="header container-fluid d-flex justify-content-between align-items-center pt-3 px-5">
   <div class="logo">Portfolio</div>
-  <nav class="navbar d-flex gap-5">
+  <nav class="navbar gap-5">
     <a routerLink="/about-me" class="navbar-title">About me</a>
     <a routerLink="/skills" class="navbar-title">Skills</a>
     <a routerLink="/projects" class="navbar-title">Projects</a>
     <a routerLink="/contacts" class="navbar-title">Contacts</a>
   </nav>
+  <div class="hamburger-menu">
+    <button class="hamburger-button" onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+    <div class="hamburger-links" id="hamburgerLinks">
+      <a routerLink="/about-me" class="navbar-title">About me</a>
+      <a routerLink="/skills" class="navbar-title">Skills</a>
+      <a routerLink="/projects" class="navbar-title">Projects</a>
+      <a routerLink="/contacts" class="navbar-title">Contacts</a>
+    </div>
+  </div>
 </header>

@@ -22,7 +22,35 @@
   color: #0E7D81;
 }
 
-.button-hero {
+.button-hero button:nth-child(1) {
   font-size: 20px;
+  width: 200px;
+  height: 100%;
+  border: 2px solid #0E7D81;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  transition: .3s;
 }
+
+.button-hero button:nth-child(2) {
+  font-size: 20px;
+  width: 200px;
+  height: 100%;
+  border: 2px solid #0E7D81;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  transition: .3s;
+  background-color: #0E7D81;
+}
+
+.button-hero button:nth-child(1):hover {
+  background-color: #0E7D81;
+  transform: scale(1.1);
+}
+
+.button-hero button:nth-child(2):hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
 
