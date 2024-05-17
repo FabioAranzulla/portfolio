@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  urlProjects: string[] = [
+    '../../assets/img/sassoCartaForbice.png'
+  ]
+
+  constructor(){}
 }

@@ -1,0 +1,31 @@
+.projects h1 {
+  font-size: 50px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 10px -10px 5px #ffffff;
+  letter-spacing: 5px;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  color: #0E7D81;
+}
+
+.card-body a {
+  font-size: 20px;
+  width: 150px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  transition: .3s;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0E7D81;
+}
+
+.card-body a:hover {
+  background-color: #14FFEC;
+  transform: scale(1.1);
+}

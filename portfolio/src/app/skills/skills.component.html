@@ -1,19 +1,30 @@
 <section class="skills d-flex flex-column pt-5">
   <div class="skills-title">
     <h1 class="text-center">Skills</h1>
+    <p class="text-center fst-italic">Languages, libraries and frameworks that I am using in this period</p>
   </div>
-  <div class="container skills-info pt-5">
+  <div class="container skills-info py-5">
     <div class="row">
-      <div class="col-md-6 text-center skills-hard">
+      <div class="col-md-6 skills-hard d-flex flex-column align-items-center pb-5">
         <h2>Front-End</h2>
-        <div>
-          <img src="../../assets/img/html.png" alt="">
-          <img src="../../assets/img/css.png" alt="">
+        <div class="d-flex justify-content-center gap-2">
+          <div class="cycle-logo" *ngFor="let logoFe of logosFe">
+            <img [src]="logoFe">
+          </div>
         </div>
       </div>
-      <div class="col-md-6 text-center skills-hard">
+      <div class="col-md-6 skills-hard d-flex flex-column align-items-center pb-5">
         <h2>Back-End</h2>
+        <div class="d-flex justify-content-center gap-2">
+          <div class="cycle-logo" *ngFor="let logoBe of logosBe">
+            <img [src]="logoBe">
+          </div>
+        </div>
       </div>
+    </div>
+    <p class="fst-italic pt-5 text-center">In my short career, I have had the opportunity to interface with other technologies, such as:</p>
+    <div class="d-flex justify-content-center gap-5">
+      <span *ngFor="let tec of otherTec">{{tec}}</span>
     </div>
   </div>
 </section>
